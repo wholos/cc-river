@@ -20,13 +20,15 @@ int keymap() {
 }
 
 int autostart() {
+	// Start wlrandr
+	system("wlr-randr --output HDMI-A-1 --mode 1366x768 &");
 	// Start pipewire
-  	system("pipewire");
-  	system("pipewire-alsa");
-	system("wireplumber");
+  	system("pipewire &");
+  	system("pipewire-alsa &");
+	system("wireplumber &");
 	// Start rivertile
-	system("riverctl default-layout rivertile");
-	system("rivertile -view-padding 0 -outer-padding 0");
+	system("riverctl default-layout rivertile &");
+	system("rivertile -view-padding 0 -outer-padding 0 &");
 	// Start riverbar
 	system("riverctl spawn \"$HOME/.config/river/status\"");
     	system("riverctl spawn \"$HOME/.config/river/bar\"");
