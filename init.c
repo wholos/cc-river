@@ -30,7 +30,7 @@ int autostart() {
 	system("wlr-randr --output HDMI-A-1 --mode 1366x768 &");
 	// Start pipewire
   	system("pipewire &");
-  	system("pipewire-alsa &");
+  	system("pipewire-pulse &");
 	system("wireplumber &");
 	// Start rivertile
 	system("riverctl default-layout rivertile &");
