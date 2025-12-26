@@ -23,6 +23,8 @@ int keymap() {
                 "riverctl map normal Super+Shift $i set-view-tags $((1 << ($i - 1))); "
             "done"
         );
+        // Screenshot bind
+        system("riverctl map normal Super G spawn gss");
         // Woomer bind
         system("riverctl map normal Super M spawn woomer");
 }
