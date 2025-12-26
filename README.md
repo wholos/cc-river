@@ -4,4 +4,7 @@
 ``` bash
 gcc
 riverwm
+wayst
+woomer
+dam
 ```
