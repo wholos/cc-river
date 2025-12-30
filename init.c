@@ -39,8 +39,6 @@ int autostart() {
         // Start rivertile
         system("riverctl default-layout rivertile &");
         system("rivertile -view-padding 0 -outer-padding 0 &");
-        // Start riverbar
-        system("sh -c 'riverctl -f | dam' &");
         // Start notify
         system("mako &");
 }
