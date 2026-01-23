@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-const char *term = "wayst";
+const char *term = "foot";
 const char *menu = "wmenu-run";
 
 int keymap() {
